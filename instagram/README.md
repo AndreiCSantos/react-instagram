@@ -40,7 +40,7 @@ O projeto foi dividido em componentes que representam seções específicas da i
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/AndreiCSantos/react-instagram.git
+   git clone https://github.com/AndreiCSantos/react-instagram
 
 2. Acesse a pasta do projeto:
    cd nome-do-projeto
