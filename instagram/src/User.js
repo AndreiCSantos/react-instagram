@@ -13,7 +13,7 @@ export default function User(){
 
   function trocarImagem(){
     const img = prompt('Passe o link')
-    setAvatar(img)
+    setAvatar(img ? img : avatar)
   }
 
     return(
