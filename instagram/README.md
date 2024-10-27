@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Projeto Instagram Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido como parte de um curso para praticar e aprimorar habilidades com **React**. A aplicação simula a interface básica do Instagram, com funcionalidades e componentes principais, usando um layout organizado e componentizado para facilitar a manutenção e reutilização do código.
 
-## Available Scripts
+## Objetivo
 
-In the project directory, you can run:
+A principal finalidade deste projeto é estudar e aplicar conceitos do React, incluindo componentização, gerenciamento de estados, eventos, e uso de `props`. Durante o desenvolvimento, foram utilizadas boas práticas de estruturação de código e versionamento de mudanças.
 
-### `npm start`
+## Estrutura de Componentes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto foi dividido em componentes que representam seções específicas da interface. Abaixo está a lista dos componentes e suas funções:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **App**: Componente principal que organiza a estrutura da página. Ele integra os componentes `Navbar` e `Body`.
+- **Navbar**: Componente responsável pelo cabeçalho da aplicação, incluindo ícones e um campo de pesquisa.
+- **Body**: Estrutura principal do conteúdo, contendo `Stories`, `Posts` e `SideBar`.
+- **SideBar**: Componente que exibe o perfil do usuário (`User`) e sugestões de contas para seguir (`Suggestions`).
+- **User**: Permite que o usuário visualize e edite seu nome e imagem de perfil.
+- **Stories**: Exibe uma lista de stories, onde cada story é representado pelo componente `Story`.
+- **Story**: Representa cada story individual, com imagem e nome de usuário.
+- **Posts**: Lista de postagens, onde cada item é representado pelo componente `Post`.
+- **Post**: Componente que representa uma postagem com imagem, curtidas, e ações de curtida/salvamento.
+- **Suggestions**: Exibe uma lista de sugestões de contas para seguir, onde cada sugestão é representada pelo componente `Suggestion`.
+- **Suggestion**: Componente individual que representa uma conta sugerida, com informações de imagem, nome de usuário e razão para a sugestão.
 
-### `npm test`
+## Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **CSS**: Utilizado para estilização dos componentes.
+- **npm**: Gerenciador de pacotes para instalação de dependências.
 
-### `npm run build`
+## Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Edição de Perfil**: Permite ao usuário alterar seu nome e foto de perfil ao clicar nos elementos apropriados.
+- **Curtidas**: O usuário pode curtir postagens clicando no ícone de coração ou na própria imagem da postagem.
+- **Navegação de Stories**: Os stories são exibidos com uma navegação simples e amigável.
+- **Sugestões**: Exibição de sugestões dinâmicas de contas para seguir.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalação e Execução
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/AndreiCSantos/react-instagram.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Acesse a pasta do projeto:
+   cd nome-do-projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências:
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Inicie o projeto:
+   npm start
+   
+5. Acesse a aplicação no navegador pelo endereço http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contribuições
 
-## Learn More
+Contribuições são bem-vindas! Para isso, siga estes passos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (git checkout -b minha-feature).
+3. Faça o commit de suas mudanças (git commit -m 'Adicionar nova feature').
+4. Envie para a branch principal (git push origin minha-feature).
+5. Abra um Pull Request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Licença
 
-### Code Splitting
+Este projeto é apenas para fins de estudo e prática. Todos os direitos sobre o layout e a marca Instagram pertencem aos seus respectivos proprietários.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Essa estrutura de `README.md` descreve os componentes, as funcionalidades e inclui instruções detalhadas para instalação e execução do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
